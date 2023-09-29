@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Open+Sans&display=swap');
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #363636;
+    color: white;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 30px;
+    position: fixed;
+    background-color: #f6f6f6;
+    z-index: 999;
+}
+header .logo {
+    margin-left: 10px;
+    font-size: 1.5em;
+    color: rgb(122, 88, 155);
+    font-weight: 700;
+}
+header .navbar a {
+    margin: 0 20px;
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    transition: .5s ease;
+    cursor: pointer;
+}
+header .navbar a:hover {
+    color: rgb(122, 88, 155);
+}
+section {
+    padding: 180px 100px;
+}
+.main  {
+    height: 100vh;
+    background: url(images/bg.jpeg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.main .social-links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 120px;
+    left: 0;
+}
+.main .social-links i {
+    padding: 10px !important;
+    font-size: 30px !important;
+    margin: 5px 0 ;
+}
+.main .info {
+    padding: 20px;
+}
+.main .info h2 {
+    font-size: 3em;
+    color: rgb(122, 88, 155);
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.main .info h3 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    color: white;
+}
+.main .info a { 
+    display: inline-block;
+    background-color: rgb(122, 88, 155);
+    margin: 30px 0;
+    padding: 10px;
+    border-radius: 10px;
+    width: 109px;
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    transition: .5s ease;
+}
+.main .info a:hover {
+    transform: scale(1.1);
+    background-color: rgb(92, 66, 117);
+}
+.title {
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+    font-size: 3em;
+    color: rgb(122, 88, 155);
+    font-weight: bold;
+    letter-spacing: 1.6px;
+}
+.services {
+    background-color: #fff;
+}
+.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.services .content .card {
+    box-shadow: 0 4px 16px 0px;
+    border-radius: 11px;
+    height: 300px;
+    text-align: center;
+    background-color: #fff;
+    margin: 10px;
+    transition: .3s;
+    color: black;
+}
+.services .content .card:hover {
+    transform: scale(1.1);
+}
+.services .content p {
+    padding: 10px;
+}
+ i {
+    padding: 40px;
+    font-size: 50px;
+    color: rgb(122, 88, 155);
+}
+.skill .content .card {
+    box-shadow: 0 4px 16px 0px;
+    border-radius: 11px;
+    height: 300px;
+    text-align: center;
+    margin: 1em;
+    transition: .3s;
+    background-color: #fff;
+    color: black;
+}
+.skill .content .card:hover {
+    transform: scale(1.1);
+}
+.skill .content .card p {
+    padding: 10px;
+    font-weight: bold;
+}
+.skill .content .card p span::after {
+    content: "";
+    display: block;
+    background-color: rgb(122, 88, 155);
+    height: 40px;
+    width: 90%;
+    border-radius: 10px;
+    margin: 10px;
+    border: 2px solid;
+}
+.skill .content .card p span:nth-child(3)::after {
+    background-color: transparent;
+}
+.skill .content .three p span::after {
+    background-color: transparent;
+}
+.projects {
+    background-color: #fff;
+}
+.projects .content  {
+    margin-top: 30px;
+}
+.projects .content .card {
+    background-color: white;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 3px solid rgb(122, 88, 155);
+    margin: 1em;
+    color: black;
+    transition: 0.7s ease;
+}
+.projects .content .card:hover {
+    transform: scale(1.1);
+}
+.projects .content .card:hover img{
+    opacity: 0.9;
+}
+.projects .card .image img {
+    width: 100%;
+}
+.projects .card .bottom-card {
+    padding: 1em;
+    margin: 0.1em;
+}
+.projects .card .bottom-card p {
+    margin: 5px;
+}
+.projects .card .bottom-card span {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.projects .card .bottom-card span a {
+    display: inline-block;
+    background-color: rgb(122, 88, 155);
+    padding: 10px;
+    border-radius: 10px;
+    width: 109px;
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    transition: .5s ease;
+    cursor: pointer;
+}
+.projects .card .bottom-card span a:hover {
+    transform: scale(1.1);
+    background-color: rgb(92, 66, 117);
+}
+.contact .content .card {
+    box-shadow: 0 4px 16px 0px;
+    border-radius: 11px;
+    height: 300px;
+    text-align: center;
+    margin: 1em;
+    transition: .3s;
+    background-color: #fff;
+    color: black;
+}
+.contact  .content .card:hover {
+    transform: scale(1.1);
+}
+.contact  .content .card span {
+    display: inline-block;
+    margin: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+footer {
+    padding: 50px;
+    text-align: center;
+    background-color: #f6f6f6;
+    color: black;
+    font-weight: bold;
+}
+/* Styles for screens smaller than 768px (typical phones) */
+@media (max-width: 767px) {
+    body {
+        max-width: 100%;
+    }
+    header {
+        padding: 10px;
+        justify-content: space-evenly;
+    }
+    header .logo {
+       margin: 0;
+       font-size: 1em; 
+    }
+    header .navbar a {
+        margin: 0 5px;
+    }
+    section {
+        padding: 60px 40px;
+    }
+    .social-links {
+        top: 100px;
+    }
+    .main .info h2,
+    .main .info h3 {
+        font-size: 2em;
+        text-align: center;
+    }
+    .main .info p {
+        font-size: 1em;
+        text-align: center;
+    }
+    .main .info a{
+        display: flex;
+        justify-content: center;
+    }
+    .main {
+        background-color: #363636;
+        width: 100%;
+        height: 60vh;
+    }
+    .projects .content .card {
+        max-width: 19em;
+        justify-content: center;
+    }
+}
+@media (max-width: 391px) {
+    header .logo {
+        display: none;
+    }
+}
+@media (min-width: 1400px) {
+    .content {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+}
